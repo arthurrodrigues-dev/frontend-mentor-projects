@@ -1,0 +1,120 @@
+/* 
+font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+/* Typography */
+
+body {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: antiquewhite;
+}
+
+h1, .price, .new-price {
+    font-family: 'Fraunces', serif;
+}
+
+.old-price {
+    text-decoration: line-through;
+}
+
+.new-price {
+    font-size: 2em;
+}
+
+button {
+    font-weight: 700;
+}
+
+h1 {
+    color: hsl(212, 21%, 14%);
+}
+
+.light {
+    color: hsl(228, 12%, 48%);
+}
+
+.green {
+    color: hsl(158, 36%, 37%);
+}
+
+.span-perfume {
+    letter-spacing: 5px;
+}
+
+/* Layout */
+
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: 10px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+
+button {
+    display: block;
+    padding: 13px;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border: 0;
+    border-radius: 7px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+svg {
+    margin-right: 10px;
+}
+
+.container {
+    max-width: 375px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.content-secondary {
+    order: -1;
+}
+
+.main-content {
+    margin: 15px;
+}
+
+.old-price {
+    margin-left: 10px;
+}
+
+.prices {
+    margin-bottom: 15px;
+}
+
+@media (min-width: 700px) {
+    .container {
+        flex-direction: row;
+        max-width: 520px;
+    }
+
+    .main-content {
+        width: 45%;
+        margin-top: 30px;
+        margin-left: 25px;
+    }
+
+    .content-secondary{
+        width: 55%;
+    }
+
+    img {
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
